@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Interests</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/gardening">Gardening</a></li>
+                <li><a href="/cooking">Cooking</a></li>
+                <li><a href="/sci_fi">Sci-Fi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Interests @IAmCoding...</p>
+    </footer>
+
+    <!-- <script src="{{ url_for('static', filename='js/main.js') }}"></script> -->
+</body>
+</html>
